@@ -1,0 +1,17 @@
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\bin\Debug\SensorflowManager.exe.config
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\bin\Debug\SensorflowManager.exe
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\bin\Debug\SensorflowManager.pdb
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\bin\Debug\Fleck.dll
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\bin\Debug\NLog.dll
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\obj\Debug\MainWindow.g.cs
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\obj\Debug\App.g.cs
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\obj\Debug\SensorflowManager_MarkupCompile.cache
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\obj\Debug\SensorflowManager_MarkupCompile.lref
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\obj\Debug\MainWindow.baml
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\obj\Debug\SensorflowManager.g.resources
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\obj\Debug\SensorflowManager.Properties.Resources.resources
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\obj\Debug\SensorflowManager.csproj.GenerateResource.Cache
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\obj\Debug\SensorflowManager.exe
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\obj\Debug\SensorflowManager.pdb
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\bin\Debug\MQTTnet.dll
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SensorflowManager\obj\Debug\SensorflowManager.csprojResolveAssemblyReference.cache

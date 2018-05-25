@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorflowDemo", "SensorflowDemo\SensorflowDemo.csproj", "{1A3A7384-0DCD-4872-ACAD-E11AB417202B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorflowManager", "SensorflowManager\SensorflowManager.csproj", "{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteHelper", "SqliteHelper\SqliteHelper.csproj", "{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Debug|Any CPU.Build.0 = Debug|x86
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Debug|x64.ActiveCfg = Debug|x64
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Debug|x64.Build.0 = Debug|x64
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Debug|x86.ActiveCfg = Debug|x86
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Debug|x86.Build.0 = Debug|x86
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Release|x64.ActiveCfg = Release|x64
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Release|x64.Build.0 = Release|x64
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Release|x86.ActiveCfg = Release|x86
+		{1A3A7384-0DCD-4872-ACAD-E11AB417202B}.Release|x86.Build.0 = Release|x86
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Debug|Any CPU.Build.0 = Debug|x86
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Debug|x64.ActiveCfg = Debug|x64
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Debug|x64.Build.0 = Debug|x64
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Debug|x86.ActiveCfg = Debug|x86
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Debug|x86.Build.0 = Debug|x86
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Release|x64.ActiveCfg = Release|x64
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Release|x64.Build.0 = Release|x64
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Release|x86.ActiveCfg = Release|x86
+		{EDCA1A30-E2C0-46B9-9B64-C326561BBCF3}.Release|x86.Build.0 = Release|x86
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Debug|Any CPU.Build.0 = Debug|x86
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Debug|x64.ActiveCfg = Debug|x64
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Debug|x64.Build.0 = Debug|x64
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Debug|x86.ActiveCfg = Debug|x86
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Debug|x86.Build.0 = Debug|x86
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Release|x64.ActiveCfg = Release|x64
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Release|x64.Build.0 = Release|x64
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Release|x86.ActiveCfg = Release|x86
+		{C9C7FC80-B36B-4D7E-92AD-CC88D3417CDB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

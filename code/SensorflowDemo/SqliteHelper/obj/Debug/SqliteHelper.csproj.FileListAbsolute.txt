@@ -1,0 +1,9 @@
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\bin\Debug\SqliteHelper.dll
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\bin\Debug\SqliteHelper.pdb
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\bin\Debug\NLog.dll
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\bin\Debug\System.Data.SQLite.dll
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\bin\Debug\System.Data.SQLite.EF6.dll
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\bin\Debug\System.Data.SQLite.Linq.dll
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\obj\Debug\SqliteHelper.csprojResolveAssemblyReference.cache
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\obj\Debug\SqliteHelper.dll
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\obj\Debug\SqliteHelper.pdb

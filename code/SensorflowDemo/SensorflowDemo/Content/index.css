@@ -1,0 +1,391 @@
+﻿body {
+    background-color: #E0EEFB;
+    font-family: "微软雅黑";
+}
+
+.main {
+    text-align: center; /*让div内部文字居中*/
+    background-color: #E0EEFB;
+    border-radius: 20px;
+    width: 1440px;
+    height: 900px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.block1 {
+    width: 20%;
+    height: 900px;
+    float: left;
+}
+
+.block2 {
+    width: 35%;
+    height: 900px;
+    float: left;
+}
+
+.block3 {
+    width: 45%;
+    height: 900px;
+    float: left;
+    background-color: #EEF6Fd;
+}
+
+.prehold {
+    width: 160px;
+    height: 60px;
+    background-image: url("Images/ic-预占_nor.png");
+}
+
+    .prehold:hover {
+        background-image: url("Images/ic-预占_hover.png");
+    }
+
+    .prehold:active {
+        background-image: url("Images/ic-预占_activity.png");
+    }
+
+
+.offline {
+    width: 160px;
+    height: 60px;
+    margin-top: 40px;
+    background-image: url("Images/ic-下架_nor.png");
+}
+
+    .offline:hover {
+        background-image: url("Images/ic-下架_hover.png");
+    }
+
+    .offline:active {
+        background-image: url("Images/ic-下架_activity.png");
+    }
+
+.location {
+    width: 160px;
+    height: 60px;
+    margin-top: 40px;
+    background-image: url("Images/ic-定位_nor.png");
+}
+
+    .location:hover {
+        background-image: url("Images/ic-定位_hover.png");
+    }
+
+    .location:active {
+        background-image: url("Images/ic-定位_activity.png");
+    }
+
+.inventory {
+    width: 160px;
+    height: 60px;
+    margin-top: 40px;
+    background-image: url("Images/ic-盘点_nor.png");
+}
+
+    .inventory:hover {
+        background-image: url("Images/ic-盘点_hover.png");
+    }
+
+    .inventory:active {
+        background-image: url("Images/ic-盘点_activity.png");
+    }
+
+.legend {
+    position: absolute;
+    bottom: 0;
+    width: 18%;
+    height: 250px;
+}
+
+.legendRow {
+    height: 40px;
+    float: left;
+    padding-top: 10px;
+}
+
+.legendColLeft {
+    width: 70px;
+    height: 40px;
+    float: left;
+}
+
+.legendColRight {
+    width: 150px;
+    height: 40px;
+    float: right;
+}
+
+.legendState1 {
+    width: 140px;
+    height: 15px;
+    background-color: #2099F2;
+    margin-top: 4px;
+}
+
+.legendState2 {
+    width: 140px;
+    height: 15px;
+    background-color: #21CC9B;
+    margin-top: 4px;
+}
+
+.legendState3 {
+    width: 140px;
+    height: 15px;
+    background-color: #FC3224;
+    margin-top: 4px;
+}
+
+.legendState4 {
+    width: 140px;
+    height: 15px;
+    border: 1px solid lightgray;
+    margin-top: 4px;
+}
+
+.divCabinet {
+    background-image: url("/Content/Images/机柜图.png");
+    width: 368px;
+    height: 858px;
+    filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    margin-left: 50px;
+    padding-top:15px;
+}
+
+.cabinetTitle {
+    height: 30px;
+    font-size: 20px;
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+.basicInfoBlock {
+    height: 270px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.basicInfoRow {
+    height: 50px;
+    float: left;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.basicInfoColLeft {
+    width: 70px;
+    height: 50px;
+    float: left;
+    color: gray;
+}
+
+.basicInfoColRight {
+    width: 200px;
+    height: 50px;
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.basicInfoTitle {
+    height: 30px;
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.basicInfoContent {
+    width: 100%;
+    float: left;
+    height: 240px;
+}
+
+.basicInfoChild {
+    width: 50%;
+    float: left;
+    height: 240px;
+    padding: 20px;
+}
+
+.basicInfoCold {
+    background-color: #2099F2;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.basicInfoHot {
+    background-color: #FE5722;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.capacityInfoRow {
+    height: 50px;
+    float: left;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.capacityInfoColLeft {
+    width: 70px;
+    height: 50px;
+    float: left;
+    color: gray;
+    margin-left: 10px;
+}
+
+.capacityInfoColRight {
+    width: 300px;
+    height: 50px;
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.capacityInfoColRight2 {
+    width: 80px;
+    height: 50px;
+    float: left;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.tempInfoRow {
+    height: 50px;
+    float: left;
+    padding-top: 20px;
+    width: 100%;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.tempColLeft {
+    width: 120px;
+    height: 50px;
+    float: left;
+    color: white;
+    margin-left: 10px;
+}
+
+.tempColRight {
+    width: 100px;
+    height: 50px;
+    float: left;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.assetList {
+    height: 580px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.assetTableRow {
+    height: 40px;
+}
+
+.assetTableCol {
+    width: 80px;
+    text-align: left;
+    color: gray;
+}
+
+.assetTableCol2 {
+    width: 120px;
+    text-align: left;
+}
+
+.assetHead {
+    text-align: left;
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+    .assetHead a {
+        text-align: left;
+        color: dodgerblue;
+        font-weight: bold;
+        font-family: "微软雅黑";
+    }
+
+#assetChart {
+    width: 500px;
+    height: 250px;
+}
+
+.changeLogDiv {
+    height: 820px;
+    background-color: white;
+    margin: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 30px;
+}
+
+.logRow {
+    height: 80px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.logCol1 {
+    width: 120px;
+    float: left;
+}
+
+.logCol2 {
+    width: 20px;
+    float: left;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.logCol3 {
+    width: 150px;
+    float: left;
+    vertical-align: top;
+}
+
+    .logCol3 h5 {
+        font-weight: bold;
+        font-family: "微软雅黑";
+    }
+
+.divLayer {
+    width: 308px;
+    height: 19.8px;
+    margin-left: 40px;
+    border-top: 0.1px solid green;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.dialogHead {
+    height:40px;
+}
+.dialogTable {
+    height:300px;
+    overflow-y:auto;
+}
+
+.dialogFoot{
+    height:40px;
+}
