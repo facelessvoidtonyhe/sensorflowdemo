@@ -9,15 +9,17 @@ namespace SqliteHelper.BLL
 	/// </summary>
 	public partial class ChangeLog
 	{
-		private readonly SqliteHelper.DAL.ChangeLog dal=new SqliteHelper.DAL.ChangeLog();
-		public ChangeLog()
-		{}
-		#region  BasicMethod
+        private readonly SqliteHelper.DAL.ChangeLog dal;
+        public ChangeLog(string dbPath)
+        {
+            dal = new DAL.ChangeLog(dbPath);
+        }
+        #region  BasicMethod
 
-		/// <summary>
-		/// 增加一条数据
-		/// </summary>
-		public bool Add(SqliteHelper.Model.ChangeLog model)
+        /// <summary>
+        /// 增加一条数据
+        /// </summary>
+        public bool Add(SqliteHelper.Model.ChangeLog model)
 		{
 			return dal.Add(model);
 		}

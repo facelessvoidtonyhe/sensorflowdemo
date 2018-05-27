@@ -55,5 +55,15 @@ namespace SensorflowDemo.Controllers
             }
             return js;
         }
+
+        public ActionResult GetCabinetModel()
+        {
+            string dbpath = HttpContext.Server.MapPath("~/App_Data/DB/demo.db");
+            SqliteHelper.BLL.Cabinet cabintbll = new SqliteHelper.BLL.Cabinet(dbpath);
+            var cabinetModel=cabintbll.GetModel(1);
+            JsonResult js = new JsonResult();
+            js = Json(cabinetModel,JsonRequestBehavior.AllowGet);
+            return js;
+        }
     }
 }

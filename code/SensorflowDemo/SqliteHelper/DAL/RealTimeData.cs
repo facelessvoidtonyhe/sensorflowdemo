@@ -9,16 +9,18 @@ namespace SqliteHelper.DAL
 	/// </summary>
 	public partial class RealTimeData
 	{
-		public RealTimeData()
-		{}
-		#region  BasicMethod
+        public RealTimeData(string connectionStr)
+        {
+            SQLiteHelper.connectionString = string.Format("Data Source={0}", connectionStr);
+        }
+        #region  BasicMethod
 
-		
 
-		/// <summary>
-		/// 增加一条数据
-		/// </summary>
-		public bool Add(SqliteHelper.Model.RealTimeData model)
+
+        /// <summary>
+        /// 增加一条数据
+        /// </summary>
+        public bool Add(SqliteHelper.Model.RealTimeData model)
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into RealTimeData(");

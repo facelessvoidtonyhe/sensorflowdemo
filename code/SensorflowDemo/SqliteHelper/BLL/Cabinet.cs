@@ -9,15 +9,17 @@ namespace SqliteHelper.BLL
 	/// </summary>
 	public partial class Cabinet
 	{
-		private readonly SqliteHelper.DAL.Cabinet dal=new SqliteHelper.DAL.Cabinet();
-		public Cabinet()
-		{}
-		#region  BasicMethod
+        private readonly SqliteHelper.DAL.Cabinet dal;
+        public Cabinet(string dbPath)
+        {
+            dal = new DAL.Cabinet(dbPath);
+        }
+        #region  BasicMethod
 
-		/// <summary>
-		/// 增加一条数据
-		/// </summary>
-		public bool Add(SqliteHelper.Model.Cabinet model)
+        /// <summary>
+        /// 增加一条数据
+        /// </summary>
+        public bool Add(SqliteHelper.Model.Cabinet model)
 		{
 			return dal.Add(model);
 		}

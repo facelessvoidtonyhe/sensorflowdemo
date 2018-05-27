@@ -9,14 +9,16 @@ namespace SqliteHelper.BLL
 	/// </summary>
 	public partial class RealTimeData
 	{
-		private readonly SqliteHelper.DAL.RealTimeData dal=new SqliteHelper.DAL.RealTimeData();
-		public RealTimeData()
-		{}
-		#region  BasicMethod
-		/// <summary>
-		/// 增加一条数据
-		/// </summary>
-		public bool Add(SqliteHelper.Model.RealTimeData model)
+        private readonly SqliteHelper.DAL.RealTimeData dal;
+        public RealTimeData(string dbPath)
+        {
+            dal = new DAL.RealTimeData(dbPath);
+        }
+        #region  BasicMethod
+        /// <summary>
+        /// 增加一条数据
+        /// </summary>
+        public bool Add(SqliteHelper.Model.RealTimeData model)
 		{
 			return dal.Add(model);
 		}

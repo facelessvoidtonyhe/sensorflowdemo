@@ -9,15 +9,17 @@ namespace SqliteHelper.DAL
 	/// </summary>
 	public partial class ChangeLog
 	{
-		public ChangeLog()
-		{}
-		#region  BasicMethod
-        
+        public ChangeLog(string connectionStr)
+        {
+            SQLiteHelper.connectionString = string.Format("Data Source={0}", connectionStr);
+        }
+        #region  BasicMethod
 
-		/// <summary>
-		/// 增加一条数据
-		/// </summary>
-		public bool Add(SqliteHelper.Model.ChangeLog model)
+
+        /// <summary>
+        /// 增加一条数据
+        /// </summary>
+        public bool Add(SqliteHelper.Model.ChangeLog model)
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into ChangeLog(");

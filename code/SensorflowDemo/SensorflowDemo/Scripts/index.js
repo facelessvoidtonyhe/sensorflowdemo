@@ -1,6 +1,7 @@
 ﻿$(function () {
     InitCabinetLayer();
     RefreshAssetChart();
+    RefreshCabinetInfo();
 })
 
 //刷新资产图表
@@ -161,4 +162,26 @@ function PreholdDialogShow() {
         size: 4
     });
     assetList();
+}
+
+//刷新机柜信息
+function RefreshCabinetInfo() {
+    $.ajax({
+        type: "GET",
+        url: "/home/GetCabinetModel",
+        dataType: "json",
+        success: function (data) {
+            $('#cabinetName').html(data.Name);
+            $('#cabinetType').html(data.Type);
+            $('#cabinetLocation').html(data.Location);
+            $('#cabinetSN').html(data.SerialNumber);
+            $('#cabinetUser').html(data.User);
+            $('#coldtemp1').html(data.ColdTemp1);
+            $('#coldtemp2').html(data.ColdTemp2);
+            $('#coldtemp3').html(data.ColdTemp3);
+            $('#hottemp1').html(data.HotTemp1);
+            $('#hottemp2').html(data.HotTemp2);
+            $('#hottemp3').html(data.HotTemp3);
+        }
+    });
 }
