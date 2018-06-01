@@ -1,0 +1,628 @@
+﻿@{
+    ViewBag.Title = "";
+}
+<link href="~/Content/index.css?v=5" rel="stylesheet" />
+<script src="~/Scripts/index.js?v=23"></script>
+<div class="main">
+    <div class="block1">
+        <div class="prehold" data-toggle="modal" data-target="#prehold" onclick="PreholdDialogShow()"></div>
+        <div class="offline" data-toggle="modal" data-target="#offline" onclick="OffLineDialogShow()"></div>
+        <div class="location" data-toggle="modal" data-target="#location" onclick="LocationDialogShow()"></div>
+        <div class="inventory" data-toggle="modal" data-target="#inventory" onclick="InventoryDialogShow()"></div>
+        <div class="panel panel-primary legend">
+            <div class="panel-heading">
+                <h3 class="panel-title">图例</h3>
+            </div>
+            <div class="panel-body">
+                <div class="legendRow">
+                    <div class="legendColLeft">预占状态</div>
+                    <div class="legendColRight">
+                        <div class="legendState1"></div>
+                    </div>
+                </div>
+                <div class="legendRow">
+                    <div class="legendColLeft">正常在架</div>
+                    <div class="legendColRight">
+                        <div class="legendState2"></div>
+                    </div>
+                </div>
+                <div class="legendRow">
+                    <div class="legendColLeft">非法在架</div>
+                    <div class="legendColRight">
+                        <div class="legendState3"></div>
+                    </div>
+                </div>
+                <div class="legendRow">
+                    <div class="legendColLeft">资产遗失</div>
+                    <div class="legendColRight">
+                        <div class="legendState4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block2">
+        <div id="cabinetName" class="cabinetTitle">
+            测试机柜
+        </div>
+        <div class="divCabinet" id="div_updown">
+        </div>
+    </div>
+    <div class="block3">
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#basicInfo" data-toggle="tab">基本信息</a></li>
+            <li><a href="#assetInfo" data-toggle="tab">柜内资产</a></li>
+            <li><a href="#changeLog" data-toggle="tab">变更记录</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="basicInfo">
+                <div id="accordion" class="accordion-style1 panel-group">
+                    <div class="basicInfoBlock">
+                        <div class="basicInfoRow">
+                            <div class="basicInfoColLeft">名称</div>
+                            <div id="cabinetName2" class="basicInfoColRight">
+                                Init
+                            </div>
+                        </div>
+                        <div class="basicInfoRow">
+                            <div class="basicInfoColLeft">类型</div>
+                            <div id="cabinetType" class="basicInfoColRight">
+                                Init
+                            </div>
+                        </div>
+                        <div class="basicInfoRow">
+                            <div class="basicInfoColLeft">位置</div>
+                            <div id="cabinetLocation" class="basicInfoColRight">
+                                Init
+                            </div>
+                        </div>
+                        <div class="basicInfoRow">
+                            <div class="basicInfoColLeft">序列号</div>
+                            <div id="cabinetSN" class="basicInfoColRight">
+                                Init
+                            </div>
+                        </div>
+                        <div class="basicInfoRow">
+                            <div class="basicInfoColLeft">用户</div>
+                            <div id="cabinetUser" class="basicInfoColRight">
+                                Init
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basicInfoBlock">
+                        <div class="basicInfoTitle">
+                            <img src="~/Content/Images/环境分析.png" />
+                        </div>
+                        <div class="basicInfoContent">
+                            <div class="basicInfoChild">
+                                <div class="basicInfoCold">
+                                    <div class="tempInfoRow">
+                                        <div class="tempColLeft">
+                                            冷通道上温度(℃)
+                                        </div>
+                                        <div id="coldtemp1" class="tempColRight">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="tempInfoRow">
+                                        <div class="tempColLeft">
+                                            冷通道中温度(℃)
+                                        </div>
+                                        <div id="coldtemp2" class="tempColRight">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="tempInfoRow">
+                                        <div class="tempColLeft">
+                                            冷通道下温度(℃)
+                                        </div>
+                                        <div id="coldtemp3" class="tempColRight">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basicInfoChild">
+                                <div class="basicInfoHot">
+                                    <div class="tempInfoRow">
+                                        <div class="tempColLeft">
+                                            热通道上温度(℃)
+                                        </div>
+                                        <div id="hottemp1" class="tempColRight">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="tempInfoRow">
+                                        <div class="tempColLeft">
+                                            热通道中温度(℃)
+                                        </div>
+                                        <div id="hottemp2" class="tempColRight">
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="tempInfoRow">
+                                        <div class="tempColLeft">
+                                            热通道下温度(℃)
+                                        </div>
+                                        <div id="hottemp3" class="tempColRight">
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basicInfoBlock">
+                        <div class="basicInfoTitle">
+                            <img src="~/Content/Images/容量分析.png" />
+                        </div>
+                        <div class="basicInfoContent">
+                            <div class="capacityInfoRow">
+                                <div class="capacityInfoColLeft">
+                                    <img src="~/Content/Images/空间.png" />
+                                </div>
+                                <div class="capacityInfoColRight">
+                                    <div class="progress">
+                                        <div id="progress1" class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 12%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="progress1Content" class="capacityInfoColRight2">
+                                    70%(12/42)
+                                </div>
+                            </div>
+                            <div class="capacityInfoRow">
+                                <div class="capacityInfoColLeft">
+                                    <img src="~/Content/Images/电力.png" />
+                                </div>
+                                <div class="capacityInfoColRight">
+                                    <div class="progress">
+                                        <div id="progress2" class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="progress2Content" class="capacityInfoColRight2">
+                                    70%(12/42)
+                                </div>
+                            </div>
+                            <div class="capacityInfoRow">
+                                <div class="capacityInfoColLeft">
+                                    <img src="~/Content/Images/承重.png" />
+                                </div>
+                                <div class="capacityInfoColRight">
+                                    <div class="progress">
+                                        <div id="progress3" class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="progress3Content" class="capacityInfoColRight2">
+                                    70%(12/42)
+                                </div>
+                            </div>
+                            <div class="capacityInfoRow">
+                                <div class="capacityInfoColLeft">
+                                    <img src="~/Content/Images/电口.png" />
+                                </div>
+                                <div class="capacityInfoColRight">
+                                    <div class="progress">
+                                        <div id="progress4" class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="progress4Content" class="capacityInfoColRight2">
+                                    70%(12/42)
+                                </div>
+                            </div>
+                            <div class="capacityInfoRow">
+                                <div class="capacityInfoColLeft">
+                                    <img src="~/Content/Images/网口.png" />
+                                </div>
+                                <div class="capacityInfoColRight">
+                                    <div class="progress">
+                                        <div id="progress5" class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="progress5Content" class="capacityInfoColRight2">
+                                    70%(12/42)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="assetInfo">
+                <div id="accordionChart" class="accordion-style1 panel-group">
+                    <div class="basicInfoBlock">
+                        <div id="assetChart">
+
+                        </div>
+                    </div>
+                    <div class="assetList" id="assetInfoDiv">
+                        <div class="panel-group" id="accordion2">
+                            <div class="panel panel-default">
+                                <div class="panel-heading assetHead">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion2"
+                                           href="#collapseOne">
+                                            001服务器,ZC1923821
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <table style="width:100%">
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    资产类别
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    服务器
+                                                </td>
+                                                <td class="assetTableCol">
+                                                    品牌
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    龙控
+                                                </td>
+                                            </tr>
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    规格型号
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    AX200
+                                                </td>
+                                                <td class="assetTableCol">
+                                                    标签ID
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    腾讯
+                                                </td>
+                                            </tr>
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    RFID标签
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    ZC201923913
+                                                </td>
+                                                <td class="assetTableCol">
+                                                    状态
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    在架
+                                                </td>
+                                            </tr>
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    使用单位
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    腾讯
+                                                </td>
+                                                <td class="assetTableCol">
+                                                    用途
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    ***
+                                                </td>
+                                            </tr>
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    维保状态
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    在保
+                                                </td>
+                                                <td class="assetTableCol">
+                                                    维保单位
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    龙控
+                                                </td>
+                                            </tr>
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    维保期限
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    2025-10-1
+                                                </td>
+                                                <td class="assetTableCol"></td>
+                                                <td class="assetTableCol2"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading assetHead">
+                                    <h4 class="panel-title">
+                                        <a class="assetHead" data-toggle="collapse" data-parent="#accordion2"
+                                           href="#collapseTwo">
+                                            002服务器,ZC1923822
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <table style="width:100%">
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    资产类别
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    服务器
+                                                </td>
+                                                <td class="assetTableCol">
+                                                    品牌
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    龙控
+                                                </td>
+                                            </tr>
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    规格型号
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    AX200
+                                                </td>
+                                                <td class="assetTableCol">
+                                                    标签ID
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    腾讯
+                                                </td>
+                                            </tr>
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    RFID标签
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    ZC201923913
+                                                </td>
+                                                <td class="assetTableCol">
+                                                    状态
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    在架
+                                                </td>
+                                            </tr>
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    使用单位
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    腾讯
+                                                </td>
+                                                <td class="assetTableCol">
+                                                    用途
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    ***
+                                                </td>
+                                            </tr>
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    维保状态
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    在保
+                                                </td>
+                                                <td class="assetTableCol">
+                                                    维保单位
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    龙控
+                                                </td>
+                                            </tr>
+                                            <tr class="assetTableRow">
+                                                <td class="assetTableCol">
+                                                    维保期限
+                                                </td>
+                                                <td class="assetTableCol2">
+                                                    2025-10-1
+                                                </td>
+                                                <td class="assetTableCol"></td>
+                                                <td class="assetTableCol2"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="changeLog">
+                <div class="accordion-style1 panel-group">
+                    <div id="changeLogDiv" class="changeLogDiv">
+                        @*<div class="logRow">
+                            <div class="logCol1">
+                                2015-09-01 00:00
+                            </div>
+                            <div class="logCol2">
+                                <img src="~/Content/Images/画板 1.png" style="vertical-align:top"/>
+                                <img src="~/Content/Images/竖线.gif" style="vertical-align:bottom;"/>
+                            </div>
+                            <div class="logCol3">
+                                <h5>上架</h5>
+                                <p>资产abcd,上架到U为2</p>
+                            </div>
+                        </div>
+                        <div class="logRow">
+                            <div class="logCol1">
+                                2015-09-01 00:00
+                            </div>
+                            <div class="logCol2">
+                                <img src="~/Content/Images/画板 3.png" style="vertical-align:top"/>
+                                <img src="~/Content/Images/竖线.gif" style="vertical-align:bottom"/>
+                            </div>
+                            <div class="logCol3">
+                                <h5>预占</h5>
+                                <p>资产abcd,上架到U为2</p>
+                            </div>
+                        </div>
+                        <div class="logRow">
+                            <div class="logCol1">
+                                2015-09-01 00:00
+                            </div>
+                            <div class="logCol2">
+                                <img src="~/Content/Images/画板 2.png" style="vertical-align:top" />
+                                <img src="~/Content/Images/竖线.gif" style="vertical-align:bottom" />
+                            </div>
+                            <div class="logCol3">
+                                <h5>预占</h5>
+                                <p>资产abcd,上架到U为2</p>
+                            </div>
+                        </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 模态框（预占） -->
+<div class="modal fade" id="prehold" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">预占</h4>
+            </div>
+            <div class="modal-body">
+                <div class="dialogHead">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">搜索</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+                <div class="dialogTable">
+                    <table id="assetList">
+                    </table>
+                </div>
+                <div class="dialogFoot">
+                    选择预占层位：
+                    <select id="LayerSelect" class="selectpicker">
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="SavePrehold()">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- 模态框（下架） -->
+<div class="modal fade" id="offline" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">下架</h4>
+            </div>
+            <div class="modal-body">
+                <div class="dialogHead">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">搜索</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+                <div class="dialogTable">
+                    <table id="assetList2"></table>
+                </div>
+                <div class="dialogFoot">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="SaveOffLine()">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- 模态框（定位） -->
+<div class="modal fade" id="location" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">定位</h4>
+            </div>
+            <div class="modal-body">
+                <div class="dialogHead">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">搜索</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+                <div class="dialogTable">
+                    <table id="assetList3"></table>
+                </div>
+                <div class="dialogFoot">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="SaveLocation()">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- 模态框（盘点） -->
+<div class="modal fade" id="inventory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">盘点</h4>
+            </div>
+            <div class="modal-body">
+                <div class="dialogHead">
+                    <div class="col-lg-6">
+                        <div id="inventoryResult" class="input-group">
+                         
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+                <div class="dialogTable">
+                    <table id="assetList4"></table>
+                </div>
+                <div class="dialogFoot">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="SaveLocation()">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>

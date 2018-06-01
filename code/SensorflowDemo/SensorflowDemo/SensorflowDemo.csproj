@@ -80,6 +80,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\NLog\NLog.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -212,6 +216,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\alert.css" />
     <Content Include="Content\bootstrap-select.css" />
     <Content Include="Content\bootstrap-select.min.css" />
     <Content Include="Content\bootstrap-table.css" />
@@ -239,18 +244,23 @@
     <Content Include="Content\Images\ic-预占_disable.png" />
     <Content Include="Content\Images\ic-预占_hover.png" />
     <Content Include="Content\Images\ic-预占_nor.png" />
+    <Content Include="Content\Images\line.gif" />
+    <Content Include="Content\Images\log1.png" />
+    <Content Include="Content\Images\log2.png" />
+    <Content Include="Content\Images\log3.png" />
+    <Content Include="Content\Images\no.png" />
+    <Content Include="Content\Images\yes.png" />
     <Content Include="Content\Images\容量分析.png" />
     <Content Include="Content\Images\承重.png" />
     <Content Include="Content\Images\机柜图.png" />
     <Content Include="Content\Images\环境分析.png" />
     <Content Include="Content\Images\电力.png" />
     <Content Include="Content\Images\电口.png" />
-    <Content Include="Content\Images\画板 1.png" />
-    <Content Include="Content\Images\画板 2.png" />
-    <Content Include="Content\Images\画板 3.png" />
     <Content Include="Content\Images\空间.png" />
-    <Content Include="Content\Images\竖线.gif" />
     <Content Include="Content\Images\网口.png" />
+    <Content Include="Content\img\error.png" />
+    <Content Include="Content\img\right.png" />
+    <Content Include="Content\img\warning.png" />
     <Content Include="Content\index.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -258,6 +268,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\alert.js" />
+    <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap-select.js" />
     <Content Include="Scripts\bootstrap-select.min.js" />
     <Content Include="Scripts\bootstrap-table-zh-CN.js" />
@@ -267,6 +279,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\Sensorflow.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\i18n\defaults-ar_AR.js" />
     <Content Include="Scripts\i18n\defaults-ar_AR.min.js" />
@@ -344,6 +357,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.nicescroll.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -366,6 +380,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="web.nlog" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

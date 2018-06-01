@@ -99,10 +99,13 @@ namespace SqliteHelper.BLL
 		{
 			return GetList("");
 		}
-        
-		#endregion  BasicMethod
-		#region  ExtensionMethod
 
+        #endregion  BasicMethod
+        #region  ExtensionMethod
+        public void Delete(string sql)
+        {
+            dal.Delete(sql);
+        }
 		#endregion  ExtensionMethod
 	}
 }

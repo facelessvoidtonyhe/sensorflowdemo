@@ -100,7 +100,10 @@ namespace SqliteHelper.BLL
         }
         #endregion  BasicMethod
         #region  ExtensionMethod
-
+        public void Update(string sql)
+        {
+            dal.Update(sql);
+        }
         #endregion  ExtensionMethod
     }
 }

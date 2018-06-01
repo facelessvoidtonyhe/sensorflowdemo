@@ -143,10 +143,15 @@ namespace SqliteHelper.Model
 			set{ _maintenancedeadline=value;}
 			get{return _maintenancedeadline;}
 		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public int? CabinetNo
+
+        public string MaintenanceDeadlineStr
+        {
+            get { return _maintenancedeadline.Value.ToString("yyyy-MM-dd HH:mm"); }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public int? CabinetNo
 		{
 			set{ _cabinetno=value;}
 			get{return _cabinetno;}
@@ -199,6 +204,11 @@ namespace SqliteHelper.Model
 			set{ _usednetport=value;}
 			get{return _usednetport;}
 		}
+
+        /// <summary>
+        /// 预占、正常、非法在架、丢失
+        /// </summary>
+        public string CabinetState { set; get; }
 		#endregion Model
 
 	}

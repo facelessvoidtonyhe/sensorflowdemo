@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\项目\SensorflowDemo\sensorflowdemo\publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>05/23/2018 11:46:45</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>05/23/2018 11:46:45</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/13/2015 13:16:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/13/2015 13:16:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/13/2015 13:16:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>02/13/2015 13:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/13/2015 13:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>02/13/2015 13:16:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/23/2012 15:23:58</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>07/10/2015 10:55:55</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/27/2012 13:00:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/SensorflowDemo.dll">
+      <publishTime>06/01/2018 18:45:46</publishTime>
+    </File>
+    <File Include="bin/SqliteHelper.dll">
+      <publishTime>06/01/2018 18:45:43</publishTime>
+    </File>
+    <File Include="bin/System.Data.SQLite.dll">
+      <publishTime>09/03/2012 20:40:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>09/10/2013 17:28:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.resources.dll">
+      <publishTime>03/02/2015 09:32:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.SqlServer.resources.dll">
+      <publishTime>03/02/2015 09:32:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.AspNet.Identity.Core.resources.dll">
+      <publishTime>04/03/2015 17:09:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.AspNet.Identity.EntityFramework.resources.dll">
+      <publishTime>04/03/2015 17:09:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.AspNet.Identity.Owin.resources.dll">
+      <publishTime>04/03/2015 17:09:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Owin.Host.SystemWeb.resources.dll">
+      <publishTime>02/13/2015 13:23:48</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Owin.resources.dll">
+      <publishTime>02/13/2015 13:23:48</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Owin.Security.Facebook.resources.dll">
+      <publishTime>02/13/2015 13:23:48</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Owin.Security.Google.resources.dll">
+      <publishTime>02/13/2015 13:23:50</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Owin.Security.MicrosoftAccount.resources.dll">
+      <publishTime>02/13/2015 13:23:50</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Owin.Security.resources.dll">
+      <publishTime>02/13/2015 13:23:50</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Owin.Security.Twitter.resources.dll">
+      <publishTime>02/13/2015 13:23:50</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>01/28/2015 04:02:22</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Optimization.resources.dll">
+      <publishTime>02/11/2014 15:28:40</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>01/28/2015 04:02:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="Content/alert.css">
+      <publishTime>04/02/2018 01:44:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap-select.css">
+      <publishTime>05/25/2018 13:38:31</publishTime>
+    </File>
+    <File Include="Content/bootstrap-select.min.css">
+      <publishTime>05/25/2018 13:38:31</publishTime>
+    </File>
+    <File Include="Content/bootstrap-table.css">
+      <publishTime>05/25/2018 13:56:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/23/2018 11:46:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/23/2018 11:46:29</publishTime>
+    </File>
+    <File Include="Content/Echart/echarts.common.min.js">
+      <publishTime>07/18/2017 15:27:20</publishTime>
+    </File>
+    <File Include="Content/Images/ic-下架_activity.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-下架_disable.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-下架_hover.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-下架_nor.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-定位_activity.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-定位_disable.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-定位_hover.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-定位_nor.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-承重.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-电力.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-电口.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-盘点_activity.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-盘点_disable.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-盘点_hover.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-盘点_nor.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-空间.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-网口.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-预占_activity.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-预占_disable.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-预占_hover.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/ic-预占_nor.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/line.gif">
+      <publishTime>05/25/2018 10:33:25</publishTime>
+    </File>
+    <File Include="Content/Images/log1.png">
+      <publishTime>05/25/2018 10:35:34</publishTime>
+    </File>
+    <File Include="Content/Images/log2.png">
+      <publishTime>05/25/2018 10:35:35</publishTime>
+    </File>
+    <File Include="Content/Images/log3.png">
+      <publishTime>05/25/2018 10:35:31</publishTime>
+    </File>
+    <File Include="Content/Images/no.png">
+      <publishTime>05/31/2018 16:24:56</publishTime>
+    </File>
+    <File Include="Content/Images/yes.png">
+      <publishTime>05/31/2018 16:24:57</publishTime>
+    </File>
+    <File Include="Content/Images/容量分析.png">
+      <publishTime>05/24/2018 16:50:06</publishTime>
+    </File>
+    <File Include="Content/Images/承重.png">
+      <publishTime>05/24/2018 17:09:16</publishTime>
+    </File>
+    <File Include="Content/Images/机柜图.png">
+      <publishTime>05/24/2018 10:43:12</publishTime>
+    </File>
+    <File Include="Content/Images/环境分析.png">
+      <publishTime>05/24/2018 16:50:05</publishTime>
+    </File>
+    <File Include="Content/Images/电力.png">
+      <publishTime>05/24/2018 17:09:16</publishTime>
+    </File>
+    <File Include="Content/Images/电口.png">
+      <publishTime>05/24/2018 17:09:16</publishTime>
+    </File>
+    <File Include="Content/Images/空间.png">
+      <publishTime>05/24/2018 17:09:16</publishTime>
+    </File>
+    <File Include="Content/Images/网口.png">
+      <publishTime>05/24/2018 17:09:16</publishTime>
+    </File>
+    <File Include="Content/img/error.png">
+      <publishTime>05/28/2018 10:39:16</publishTime>
+    </File>
+    <File Include="Content/img/right.png">
+      <publishTime>05/28/2018 10:39:16</publishTime>
+    </File>
+    <File Include="Content/img/warning.png">
+      <publishTime>05/28/2018 10:39:16</publishTime>
+    </File>
+    <File Include="Content/index.css">
+      <publishTime>06/01/2018 15:37:36</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/23/2018 11:46:26</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>05/23/2018 11:46:26</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/23/2018 11:46:29</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/23/2018 11:46:29</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/23/2018 11:46:29</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/23/2018 11:46:29</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/23/2018 11:46:26</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/24/2018 10:27:39</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.js">
+      <publishTime>05/23/2018 11:46:45</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>05/23/2018 11:46:45</publishTime>
+    </File>
+    <File Include="Scripts/alert.js">
+      <publishTime>05/28/2018 10:50:00</publishTime>
+    </File>
+    <File Include="Scripts/bootbox.min.js">
+      <publishTime>05/28/2018 10:11:19</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-select.js">
+      <publishTime>05/25/2018 13:38:11</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-select.min.js">
+      <publishTime>05/25/2018 13:38:24</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table-zh-CN.js">
+      <publishTime>05/25/2018 14:16:57</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-table.js">
+      <publishTime>05/28/2018 11:34:49</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/23/2018 11:46:29</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/23/2018 11:46:29</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ar_AR.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ar_AR.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-bg_BG.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-bg_BG.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-cro_CRO.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-cro_CRO.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-cs_CZ.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-cs_CZ.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-da_DK.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-da_DK.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-de_DE.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-de_DE.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-en_US.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-en_US.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-es_CL.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-es_CL.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-es_ES.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-es_ES.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-et_EE.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-et_EE.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-eu.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-eu.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-fa_IR.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-fa_IR.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-fi_FI.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-fi_FI.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-fr_FR.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-fr_FR.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-hu_HU.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-hu_HU.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-id_ID.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-id_ID.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-it_IT.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-it_IT.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ja_JP.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ja_JP.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-kh_KM.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-kh_KM.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ko_KR.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ko_KR.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-lt_LT.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-lt_LT.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-nb_NO.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-nb_NO.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-nl_NL.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-nl_NL.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-pl_PL.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-pl_PL.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-pt_BR.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-pt_BR.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-pt_PT.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-pt_PT.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ro_RO.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ro_RO.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ru_RU.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ru_RU.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-sk_SK.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-sk_SK.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-sl_SI.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-sl_SI.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-sv_SE.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-sv_SE.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-tr_TR.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-tr_TR.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ua_UA.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-ua_UA.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-vi_VN.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-vi_VN.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-zh_CN.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-zh_CN.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-zh_TW.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/i18n/defaults-zh_TW.min.js">
+      <publishTime>07/20/2017 02:56:43</publishTime>
+    </File>
+    <File Include="Scripts/index.js">
+      <publishTime>06/01/2018 17:35:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>05/23/2018 11:46:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>05/23/2018 11:46:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>05/23/2018 11:46:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery.nicescroll.min.js">
+      <publishTime>03/24/2016 16:43:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>05/23/2018 11:46:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>05/23/2018 11:46:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>05/23/2018 11:46:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>05/23/2018 11:46:33</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>05/23/2018 11:46:33</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>05/23/2018 11:46:33</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>05/23/2018 11:46:33</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>05/31/2018 17:14:08</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>06/01/2018 17:20:57</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>05/23/2018 11:46:34</publishTime>
+    </File>
+    <File Include="Views/Shared/Lockout.cshtml">
+      <publishTime>05/23/2018 11:46:35</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>06/01/2018 11:14:37</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>05/23/2018 11:46:35</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>05/23/2018 11:46:26</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/23/2018 11:46:26</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/01/2018 14:35:24</publishTime>
+    </File>
+    <File Include="web.nlog">
+      <publishTime>06/01/2018 09:56:26</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

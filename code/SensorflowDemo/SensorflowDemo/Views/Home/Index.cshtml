@@ -1,14 +1,14 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "";
 }
-<link href="~/Content/index.css?v=1" rel="stylesheet" />
-<script src="~/Scripts/index.js?v=4"></script>
+<link href="~/Content/index.css?v=5" rel="stylesheet" />
+<script src="~/Scripts/index.js?v=23"></script>
 <div class="main">
     <div class="block1">
         <div class="prehold" data-toggle="modal" data-target="#prehold" onclick="PreholdDialogShow()"></div>
-        <div class="offline"></div>
-        <div class="location"></div>
-        <div class="inventory"></div>
+        <div class="offline" data-toggle="modal" data-target="#offline" onclick="OffLineDialogShow()"></div>
+        <div class="location" data-toggle="modal" data-target="#location" onclick="LocationDialogShow()"></div>
+        <div class="inventory" data-toggle="modal" data-target="#inventory" onclick="InventoryDialogShow()"></div>
         <div class="panel panel-primary legend">
             <div class="panel-heading">
                 <h3 class="panel-title">图例</h3>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="legendRow">
-                    <div class="legendColLeft">空闲状态</div>
+                    <div class="legendColLeft">资产遗失</div>
                     <div class="legendColRight">
                         <div class="legendState4"></div>
                     </div>
@@ -60,7 +60,7 @@
                     <div class="basicInfoBlock">
                         <div class="basicInfoRow">
                             <div class="basicInfoColLeft">名称</div>
-                            <div id="cabinetName" class="basicInfoColRight">
+                            <div id="cabinetName2" class="basicInfoColRight">
                                 Init
                             </div>
                         </div>
@@ -163,12 +163,12 @@
                                 </div>
                                 <div class="capacityInfoColRight">
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <div id="progress1" class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 12%">
                                             <span class="sr-only">40% Complete (success)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="capacityInfoColRight2">
+                                <div id="progress1Content" class="capacityInfoColRight2">
                                     70%(12/42)
                                 </div>
                             </div>
@@ -178,12 +178,12 @@
                                 </div>
                                 <div class="capacityInfoColRight">
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                        <div id="progress2" class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
                                             <span class="sr-only">20% Complete</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="capacityInfoColRight2">
+                                <div id="progress2Content" class="capacityInfoColRight2">
                                     70%(12/42)
                                 </div>
                             </div>
@@ -193,12 +193,12 @@
                                 </div>
                                 <div class="capacityInfoColRight">
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <div id="progress3" class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                                             <span class="sr-only">60% Complete (warning)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="capacityInfoColRight2">
+                                <div id="progress3Content" class="capacityInfoColRight2">
                                     70%(12/42)
                                 </div>
                             </div>
@@ -208,12 +208,12 @@
                                 </div>
                                 <div class="capacityInfoColRight">
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                        <div id="progress4" class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                                             <span class="sr-only">80% Complete (danger)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="capacityInfoColRight2">
+                                <div id="progress4Content" class="capacityInfoColRight2">
                                     70%(12/42)
                                 </div>
                             </div>
@@ -223,12 +223,12 @@
                                 </div>
                                 <div class="capacityInfoColRight">
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                        <div id="progress5" class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                                             <span class="sr-only">80% Complete (danger)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="capacityInfoColRight2">
+                                <div id="progress5Content" class="capacityInfoColRight2">
                                     70%(12/42)
                                 </div>
                             </div>
@@ -237,13 +237,13 @@
                 </div>
             </div>
             <div class="tab-pane" id="assetInfo">
-                <div id="accordion2" class="accordion-style1 panel-group">
+                <div id="accordionChart" class="accordion-style1 panel-group">
                     <div class="basicInfoBlock">
                         <div id="assetChart">
 
                         </div>
                     </div>
-                    <div class="assetList">
+                    <div class="assetList" id="assetInfoDiv">
                         <div class="panel-group" id="accordion2">
                             <div class="panel panel-default">
                                 <div class="panel-heading assetHead">
@@ -443,8 +443,8 @@
             </div>
             <div class="tab-pane" id="changeLog">
                 <div class="accordion-style1 panel-group">
-                    <div class="changeLogDiv">
-                        <div class="logRow">
+                    <div id="changeLogDiv" class="changeLogDiv">
+                        @*<div class="logRow">
                             <div class="logCol1">
                                 2015-09-01 00:00
                             </div>
@@ -482,7 +482,7 @@
                                 <h5>预占</h5>
                                 <p>资产abcd,上架到U为2</p>
                             </div>
-                        </div>
+                        </div>*@
                     </div>
                 </div>
             </div>
@@ -516,54 +516,112 @@
                 <div class="dialogFoot">
                     选择预占层位：
                     <select id="LayerSelect" class="selectpicker">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                        <option>13</option>
-                        <option>14</option>
-                        <option>15</option>
-                        <option>16</option>
-                        <option>17</option>
-                        <option>18</option>
-                        <option>19</option>
-                        <option>20</option>
-                        <option>21</option>
-                        <option>22</option>
-                        <option>23</option>
-                        <option>24</option>
-                        <option>25</option>
-                        <option>26</option>
-                        <option>27</option>
-                        <option>28</option>
-                        <option>29</option>
-                        <option>30</option>
-                        <option>31</option>
-                        <option>32</option>
-                        <option>33</option>
-                        <option>34</option>
-                        <option>35</option>
-                        <option>36</option>
-                        <option>37</option>
-                        <option>38</option>
-                        <option>39</option>
-                        <option>40</option>
-                        <option>41</option>
-                        <option>42</option>
+                        
                     </select>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                <button type="button" class="btn btn-primary">确定</button>
+                <button type="button" class="btn btn-primary" onclick="SavePrehold()">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- 模态框（下架） -->
+<div class="modal fade" id="offline" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">下架</h4>
+            </div>
+            <div class="modal-body">
+                <div class="dialogHead">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">搜索</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+                <div class="dialogTable">
+                    <table id="assetList2"></table>
+                </div>
+                <div class="dialogFoot">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="SaveOffLine()">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- 模态框（定位） -->
+<div class="modal fade" id="location" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">定位</h4>
+            </div>
+            <div class="modal-body">
+                <div class="dialogHead">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">搜索</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+                <div class="dialogTable">
+                    <table id="assetList3"></table>
+                </div>
+                <div class="dialogFoot">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="SaveLocation()">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- 模态框（盘点） -->
+<div class="modal fade" id="inventory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">盘点</h4>
+            </div>
+            <div class="modal-body">
+                <div class="dialogHead">
+                    <div class="col-lg-6">
+                        <div id="inventoryResult" class="input-group">
+                         
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+                <div class="dialogTable">
+                    <table id="assetList4"></table>
+                </div>
+                <div class="dialogFoot">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="SaveLocation()">确定</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->

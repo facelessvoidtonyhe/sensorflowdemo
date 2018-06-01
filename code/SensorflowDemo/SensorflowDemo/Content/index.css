@@ -139,18 +139,20 @@
     width: 140px;
     height: 15px;
     background-color: #FC3224;
+    border:1px solid lightgray;
     margin-top: 4px;
 }
 
 .legendState4 {
     width: 140px;
     height: 15px;
+    background-color: White;
     border: 1px solid lightgray;
     margin-top: 4px;
 }
 
 .divCabinet {
-    background-image: url("/Content/Images/机柜图.png");
+    background-image: url("Images/机柜图.png");
     width: 368px;
     height: 858px;
     filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
@@ -256,7 +258,7 @@
 }
 
 .capacityInfoColRight2 {
-    width: 80px;
+    width: 150px;
     height: 50px;
     float: left;
     text-align: left;
@@ -359,7 +361,7 @@
 }
 
 .logCol3 {
-    width: 150px;
+    width: 180px;
     float: left;
     vertical-align: top;
 }

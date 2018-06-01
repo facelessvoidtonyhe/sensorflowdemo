@@ -225,7 +225,11 @@ namespace SqliteHelper.DAL
 				{
 					model.Name=row["Name"].ToString();
 				}
-				if(row["Type"]!=null)
+                if (row["OrderNo"] != null)
+                {
+                    model.OrderNo = int.Parse(row["OrderNo"].ToString());
+                }
+                if (row["Type"]!=null)
 				{
 					model.Type=row["Type"].ToString();
 				}

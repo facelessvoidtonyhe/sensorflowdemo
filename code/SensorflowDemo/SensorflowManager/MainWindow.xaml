@@ -5,15 +5,104 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SensorflowManager"
         mc:Ignorable="d"
-        Title="后台监测工具" Height="350" Width="525" Loaded="Window_Loaded">
+        Title="后台监测工具" Height="350" Width="525" Loaded="Window_Loaded" Closed="Window_Closed">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <!--<RowDefinition Height="30"></RowDefinition>-->
         </Grid.RowDefinitions>
-        <TextBox Margin="5" Name="tb_message"></TextBox>
+        <TabControl>
+            <TabItem Header="服务端日志">
+                <TextBox Margin="5" Name="tb_message"></TextBox>
+            </TabItem>
+            <TabItem Header="客户端日志">
+                <TextBox Margin="5" Name="tb_message2"></TextBox>
+            </TabItem>
+            <TabItem Header="WebSocket日志">
+                <TextBox Margin="5" Name="tb_message3" AcceptsReturn="True"></TextBox>
+            </TabItem>
+            <TabItem Header="硬件模拟">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <Label Content="资产标签号"></Label>
+                        <TextBox Width="100" Name="tb_rfid"></TextBox>
+                        <Label Content="U位" Margin="10,0,0,0"></Label>
+                        <ComboBox Name="cmb_layer" Width="100">
+                            <ComboBoxItem Content="1" IsSelected="True"></ComboBoxItem>
+                            <ComboBoxItem Content="2"></ComboBoxItem>
+                            <ComboBoxItem Content="3"></ComboBoxItem>
+                            <ComboBoxItem Content="4"></ComboBoxItem>
+                            <ComboBoxItem Content="5"></ComboBoxItem>
+                            <ComboBoxItem Content="6"></ComboBoxItem>
+                            <ComboBoxItem Content="7"></ComboBoxItem>
+                            <ComboBoxItem Content="8"></ComboBoxItem>
+                            <ComboBoxItem Content="9"></ComboBoxItem>
+                            <ComboBoxItem Content="10"></ComboBoxItem>
+                            <ComboBoxItem Content="11"></ComboBoxItem>
+                            <ComboBoxItem Content="12"></ComboBoxItem>
+                            <ComboBoxItem Content="13"></ComboBoxItem>
+                            <ComboBoxItem Content="14"></ComboBoxItem>
+                            <ComboBoxItem Content="15"></ComboBoxItem>
+                            <ComboBoxItem Content="16"></ComboBoxItem>
+                            <ComboBoxItem Content="17"></ComboBoxItem>
+                            <ComboBoxItem Content="18"></ComboBoxItem>
+                            <ComboBoxItem Content="19"></ComboBoxItem>
+                            <ComboBoxItem Content="20"></ComboBoxItem>
+                            <ComboBoxItem Content="21"></ComboBoxItem>
+                            <ComboBoxItem Content="22"></ComboBoxItem>
+                            <ComboBoxItem Content="23"></ComboBoxItem>
+                            <ComboBoxItem Content="24"></ComboBoxItem>
+                            <ComboBoxItem Content="25"></ComboBoxItem>
+                            <ComboBoxItem Content="26"></ComboBoxItem>
+                            <ComboBoxItem Content="27"></ComboBoxItem>
+                            <ComboBoxItem Content="28"></ComboBoxItem>
+                            <ComboBoxItem Content="29"></ComboBoxItem>
+                            <ComboBoxItem Content="30"></ComboBoxItem>
+                            <ComboBoxItem Content="31"></ComboBoxItem>
+                            <ComboBoxItem Content="32"></ComboBoxItem>
+                            <ComboBoxItem Content="33"></ComboBoxItem>
+                            <ComboBoxItem Content="34"></ComboBoxItem>
+                            <ComboBoxItem Content="35"></ComboBoxItem>
+                            <ComboBoxItem Content="36"></ComboBoxItem>
+                            <ComboBoxItem Content="37"></ComboBoxItem>
+                            <ComboBoxItem Content="38"></ComboBoxItem>
+                            <ComboBoxItem Content="39"></ComboBoxItem>
+                            <ComboBoxItem Content="40"></ComboBoxItem>
+                            <ComboBoxItem Content="41"></ComboBoxItem>
+                            <ComboBoxItem Content="42"></ComboBoxItem>
+                        </ComboBox>
+                        <Button Width="80" Margin="5,0,0,0" Content="插入" Click="Button_Click_3"></Button>
+                    </StackPanel>
+                    <DataGrid  CanUserAddRows="False" GridLinesVisibility="Horizontal" AutoGenerateColumns="False" Name="dglist" Grid.Row="1">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="U位" Width="200" Binding="{Binding LayerIndex}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="标签" Width="200" Binding="{Binding RFID}"></DataGridTextColumn>
+                            <DataGridTemplateColumn Header="删除" MinWidth="80">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="删除" Tag="{Binding OrderNo}" Click="Button_Click_2"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="初始化">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Button Width="80" Height="30" Content="初始化资产" Click="Button_Click_4"></Button>
+                    <Button Width="80" Height="30" Margin="5,0,0,0" Content="清空转移日志" Click="Button_Click_5"></Button>
+                    <Button Width="80" Height="30" Margin="5,0,0,0" Content="清空实时标签" Click="Button_Click_6"></Button>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
         <StackPanel Visibility="Hidden" Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button Width="80" Height="25" Content="关闭" Margin="5,0,0,0"></Button>
+            <Button Width="80" Height="25" Content="开启" Margin="5,0,0,0" Click="Button_Click_1"></Button>
+            <Button Width="80" Height="25" Content="订阅" Margin="5,0,0,0" Click="Button_Click"></Button>
         </StackPanel>
     </Grid>
 </Window>

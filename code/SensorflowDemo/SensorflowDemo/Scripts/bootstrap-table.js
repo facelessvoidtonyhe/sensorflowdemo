@@ -2809,7 +2809,7 @@
         for (let r of this.options.data) {
           r[this.header.stateField] = false
         }
-        this.$selectItem.filter(':checked').not($this).prop('checked', false)
+        this.$selectItem.filter(':checked').not($(this)).prop('checked', false)
       }
 
       row[this.header.stateField] = checked

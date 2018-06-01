@@ -22,8 +22,10 @@ namespace SensorflowDemo
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap-table.js",
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/alert.js",
                       "~/Scripts/respond.js",
                       "~/Scripts/bootstrap-select.min.js",
+                      "~/Scripts/jquery.nicescroll.min.js",
                       "~/Scripts/i18n/defaults-zh_CN.min.js",
                       "~/Content/Echart/echarts.common.min.js",
                       "~/Scripts/bootstrap-table-zh-CN.js"));
@@ -31,6 +33,7 @@ namespace SensorflowDemo
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
+                      "~/Content/alert.css",
                       "~/Content/bootstrap-select.min.css",
                       "~/Content/bootstrap-table.css"));
         }

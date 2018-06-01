@@ -48,10 +48,15 @@ namespace SqliteHelper.Model
 			set{ _createtime=value;}
 			get{return _createtime;}
 		}
-		/// <summary>
-		/// 
-		/// </summary>
-		public string OperationType
+
+        public string CreateTimeStr
+        {
+            get { return _createtime.Value.ToString("yyyy-MM-dd HH:mm"); }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string OperationType
 		{
 			set{ _operationtype=value;}
 			get{return _operationtype;}
