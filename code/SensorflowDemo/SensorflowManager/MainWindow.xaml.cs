@@ -409,5 +409,45 @@ namespace SensorflowManager
             realTimeBll.Delete("delete from RealTimeData");
             MessageBox.Show("清空成功");
         }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            var layer = cmb_layer2.SelectedIndex + 1;
+            string topic = string.Format("command/mu-test/u-{0}/led", layer);
+            string inputString = JsonConvert.SerializeObject(new SensorFlowCommond()
+            {
+                monitoringUnit = "mu-test",
+                sampleUnit = string.Format("u-{0}", layer),
+                channel = "led",
+                parameters = new parameters()
+                {
+                    r = 0,
+                    g = 0,
+                    b = 0
+                },
+                phase = "executing",
+                timeout = 100000,
+                operator1 = "admin",
+                startTime = "2020-06-01T18:57:30Z"
+            });
+            inputString = inputString.Replace("operator1", "operator").Trim();
+            var appMsg = new MqttApplicationMessage(topic, Encoding.UTF8.GetBytes(inputString), MqttQualityOfServiceLevel.AtMostOnce, false);
+            mqttClient.PublishAsync(appMsg);
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            string topic = txtPubTopic.Text.Trim();
+
+            if (string.IsNullOrEmpty(topic))
+            {
+                MessageBox.Show("发布主题不能为空！");
+                return;
+            }
+
+            string inputString = txtSendMessage.Text.Trim();
+            var appMsg = new MqttApplicationMessage(topic, Encoding.UTF8.GetBytes(inputString), MqttQualityOfServiceLevel.AtMostOnce, false);
+            mqttClient.PublishAsync(appMsg);
+        }
     }
 }

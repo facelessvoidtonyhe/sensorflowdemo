@@ -93,11 +93,74 @@
                 </Grid>
             </TabItem>
             <TabItem Header="初始化">
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button Width="80" Height="30" Content="初始化资产" Click="Button_Click_4"></Button>
-                    <Button Width="80" Height="30" Margin="5,0,0,0" Content="清空转移日志" Click="Button_Click_5"></Button>
-                    <Button Width="80" Height="30" Margin="5,0,0,0" Content="清空实时标签" Click="Button_Click_6"></Button>
-                </StackPanel>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="100"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button Width="80" Height="30" Content="初始化资产" Click="Button_Click_4"></Button>
+                        <Button Width="80" Height="30" Margin="5,0,0,0" Content="清空转移日志" Click="Button_Click_5"></Button>
+                        <Button Width="80" Height="30" Margin="5,0,0,0" Content="清空实时标签" Click="Button_Click_6"></Button>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <ComboBox Name="cmb_layer2" Width="100">
+                            <ComboBoxItem Content="1" IsSelected="True"></ComboBoxItem>
+                            <ComboBoxItem Content="2"></ComboBoxItem>
+                            <ComboBoxItem Content="3"></ComboBoxItem>
+                            <ComboBoxItem Content="4"></ComboBoxItem>
+                            <ComboBoxItem Content="5"></ComboBoxItem>
+                            <ComboBoxItem Content="6"></ComboBoxItem>
+                            <ComboBoxItem Content="7"></ComboBoxItem>
+                            <ComboBoxItem Content="8"></ComboBoxItem>
+                            <ComboBoxItem Content="9"></ComboBoxItem>
+                            <ComboBoxItem Content="10"></ComboBoxItem>
+                            <ComboBoxItem Content="11"></ComboBoxItem>
+                            <ComboBoxItem Content="12"></ComboBoxItem>
+                            <ComboBoxItem Content="13"></ComboBoxItem>
+                            <ComboBoxItem Content="14"></ComboBoxItem>
+                            <ComboBoxItem Content="15"></ComboBoxItem>
+                            <ComboBoxItem Content="16"></ComboBoxItem>
+                            <ComboBoxItem Content="17"></ComboBoxItem>
+                            <ComboBoxItem Content="18"></ComboBoxItem>
+                            <ComboBoxItem Content="19"></ComboBoxItem>
+                            <ComboBoxItem Content="20"></ComboBoxItem>
+                            <ComboBoxItem Content="21"></ComboBoxItem>
+                            <ComboBoxItem Content="22"></ComboBoxItem>
+                            <ComboBoxItem Content="23"></ComboBoxItem>
+                            <ComboBoxItem Content="24"></ComboBoxItem>
+                            <ComboBoxItem Content="25"></ComboBoxItem>
+                            <ComboBoxItem Content="26"></ComboBoxItem>
+                            <ComboBoxItem Content="27"></ComboBoxItem>
+                            <ComboBoxItem Content="28"></ComboBoxItem>
+                            <ComboBoxItem Content="29"></ComboBoxItem>
+                            <ComboBoxItem Content="30"></ComboBoxItem>
+                            <ComboBoxItem Content="31"></ComboBoxItem>
+                            <ComboBoxItem Content="32"></ComboBoxItem>
+                            <ComboBoxItem Content="33"></ComboBoxItem>
+                            <ComboBoxItem Content="34"></ComboBoxItem>
+                            <ComboBoxItem Content="35"></ComboBoxItem>
+                            <ComboBoxItem Content="36"></ComboBoxItem>
+                            <ComboBoxItem Content="37"></ComboBoxItem>
+                            <ComboBoxItem Content="38"></ComboBoxItem>
+                            <ComboBoxItem Content="39"></ComboBoxItem>
+                            <ComboBoxItem Content="40"></ComboBoxItem>
+                            <ComboBoxItem Content="41"></ComboBoxItem>
+                            <ComboBoxItem Content="42"></ComboBoxItem>
+                        </ComboBox>
+                        <Button Width="80" Height="30" Content="灯复位" Click="Button_Click_7"></Button>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Label Content="主题"></Label>
+                        <TextBox Width="300" Name="txtPubTopic"></TextBox>
+                    </StackPanel>
+                    <TextBox AcceptsReturn="True" AcceptsTab="True"  Grid.Row="3" Name="txtSendMessage" Margin="5"/>
+                    <Button  Grid.Row="4" Width="80" Height="30" Content="设置" Click="Button_Click_8"></Button>
+
+                </Grid>
             </TabItem>
         </TabControl>
         <StackPanel Visibility="Hidden" Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">

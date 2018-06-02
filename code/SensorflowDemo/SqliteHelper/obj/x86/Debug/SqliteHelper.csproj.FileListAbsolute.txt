@@ -11,3 +11,4 @@ E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\bin\x86
 E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\bin\x86\Debug\System.Data.SQLite.dll
 E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\obj\x86\Debug\SqliteHelper.dll
 E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\obj\x86\Debug\SqliteHelper.pdb
+E:\项目\SensorflowDemo\sensorflowdemo\code\SensorflowDemo\SqliteHelper\obj\x86\Debug\SqliteHelper.csprojResolveAssemblyReference.cache
